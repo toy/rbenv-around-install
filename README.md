@@ -32,5 +32,5 @@ rbenv rehash
 
 ```sh
 mkdir -p "$(rbenv root)"/plugins
-git clone https://github.com/toy/rbenv-around-install.git "$(rbenv root)"/plugins/rbenv-around-install
+git clone https://github.com/toy/rbenv-around-install.git "$(rbenv root)"/plugins/around-install
 ```
