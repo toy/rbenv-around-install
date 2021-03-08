@@ -1,8 +1,9 @@
 # rbenv-around-install
 
 Automatically run `~/.rbenv/before-install` before and `~/.rbenv/after-install` after `rbenv install`.
+Also run `~/.rbenv/before-uninstall` before and `~/.rbenv/after-uninstall` after `rbenv uninstall`.
 Add extension `.eval` to eval instead of running those binaries.
-Don't forget to run `chmod u+x ~/.rbenv/before-install ~/.rbenv/after-install`.
+Don't forget to run `chmod u+x` on every script.
 Note that without `.eval` extension it must be a bash script, otherwise it can be any proper executable.
 
 ## Examples
