@@ -6,16 +6,16 @@ else
 fi
 
 run_bin() {
-  local path="$1"
+  local bin="$1"
 
-  if [ -f "$path.eval" ]; then
-    echo "Evaluating for $VERSION_NAME: $path.eval"
-    source "$path.eval"
+  if [ -f "$bin.eval" ]; then
+    echo "Evaluating for $VERSION_NAME: $bin.eval"
+    source "$bin.eval"
   fi
 
-  if [ -x "$path" ]; then
-    echo "Running for $VERSION_NAME: $path"
-    RBENV_VERSION="$VERSION_NAME" $path
+  if [ -x "$bin" ]; then
+    echo "Running for $VERSION_NAME: $bin"
+    RBENV_VERSION="$VERSION_NAME" "$bin"
   fi
 }
 
